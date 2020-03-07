@@ -1,0 +1,9 @@
+<h1>Patients</h1>
+
+<%= link_to 'New Patient', new_patient_path %>
+
+<ul>
+  <% @patients.each do |patient| %>
+  <li><%= patient.name %></li>
+  <% end %>
+</ul>
