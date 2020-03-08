@@ -1,0 +1,14 @@
+<p>
+  <strong>Name:</strong>
+  <%= @patient.name %>
+</p>
+
+<%= form_with(model: [@patient, @patient_note], local: true) do |form| %>
+  <p>
+    <%= form.label :note %><br>
+    <%= form.text_area :note %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
